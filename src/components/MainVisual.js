@@ -120,7 +120,7 @@ export default class MainVisual extends Component {
           <Particles params={params} />
           <div className="mainText">
             <div className="text">
-              Hello, I'm <span class="highlight">Nguyen Kim Thanh</span>
+              Hello, I'm <span className="highlight">Nguyen Kim Thanh</span>
               <br />
               I'm a front-end web developer.
             </div>

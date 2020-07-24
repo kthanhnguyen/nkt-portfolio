@@ -4,8 +4,12 @@ import Loader from "../components/Loader";
 
 export default (WrappedComponent) => {
   class Wrapper extends Component {
-    state = { isLoading: true };
-
+    constructor(props) {
+      super(props);
+      this.state = {
+        isLoading: true,
+      };
+    }
     componentDidMount = () => this.setTimer();
 
     componentDidUpdate = (prevProps) => {
@@ -19,8 +23,11 @@ export default (WrappedComponent) => {
 
     timer = () => this.setState({ isLoading: false }, () => this.clearTimer());
 
-    setTimer = () => (this.timeout = setTimeout(this.timer, 3000));
+    setTimer = () => (this.timeout = setTimeout(this.timer, 2500));
 
+    componentWillUnmount() {
+      this.clearTimer();
+    }
     render() {
       return (
         <Fragment>

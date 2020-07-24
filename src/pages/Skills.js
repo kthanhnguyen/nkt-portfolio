@@ -19,9 +19,13 @@ export default class Skills extends Component {
   componentDidMount() {
     document.title = "Skills";
 
-    setInterval(() => {
+    this.setTime = setInterval(() => {
       this.forceUpdate();
     }, 2500);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.setTime);
   }
 
   render() {

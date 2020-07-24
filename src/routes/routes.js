@@ -2,6 +2,8 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
+import Detail from "../pages/Detail";
 import PageNotFound from "../pages/PageNotFound";
 
 const routesHome = [
@@ -24,6 +26,16 @@ const routesHome = [
     path: "/portfolio",
     exact: true,
     component: Portfolio,
+  },
+  {
+    path: "/portfolio/:id",
+    exact: true,
+    component: Detail,
+  },
+  {
+    path: "/contact",
+    exact: true,
+    component: Contact,
   },
   {
     path: "",

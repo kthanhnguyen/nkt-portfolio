@@ -1,0 +1,40 @@
+.detail {
+  font-family: "Lato";
+  &__name {
+    color: #fff;
+    font-size: 2.625em;
+    line-height: 1.45em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 0.5em;
+    width: 100%;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.35);
+  }
+
+  .awssld__controls__arrow-left:before,
+  .awssld__controls__arrow-left:after,
+  .awssld__controls__arrow-right:before,
+  .awssld__controls__arrow-right:after {
+    background-color: #fff;
+  }
+  .awssld__bullets button {
+    background-color: #fff;
+  }
+}
+.awssld__content .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}

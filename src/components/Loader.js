@@ -26,11 +26,11 @@ export default class Loader extends Component {
         },
         0
       );
-    }, 2500);
+    }, 2000);
 
     this.myTween = TweenLite.fromTo(
       this.progressBar,
-      2,
+      1,
       { width: 0 },
       { width: "100%", duration: 1 }
     );

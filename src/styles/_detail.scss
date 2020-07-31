@@ -1,5 +1,6 @@
 .detail {
   font-family: "Lato";
+  padding: 50px 0;
   &__name {
     color: #fff;
     font-size: 2.625em;
@@ -37,4 +38,80 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.share {
+  text-align: left;
+  margin-bottom: 20px;
+  .aws-btn {
+    --button-primary-color: #e31d6d;
+    --button-primary-color-dark: #a0134d;
+    --button-primary-color-light: #ffffff;
+    --button-primary-color-hover: #b71559;
+    --button-primary-border: none;
+  }
+}
+
+.slide {
+  position: relative;
+  margin-bottom: 100px;
+  &__caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: auto;
+    z-index: 2;
+    p {
+      display: inline-block;
+      padding: 8px 10px 10px;
+      background: rgba(100, 100, 100, 0.5);
+      transform: translateX(400%);
+      opacity: 0;
+      transition: transform 0.425s cubic-bezier(0.05, 0.65, 0.1, 0.95),
+        opacity 0.3s ease-out,
+        -webkit-transform 0.425s cubic-bezier(0.05, 0.65, 0.1, 0.95);
+    }
+  }
+}
+.awssld--active {
+  .slide {
+    &__caption {
+      p {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.section_info {
+  margin-bottom: 3em;
+  text-align: left;
+  h2 {
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    letter-spacing: -0.045em;
+    padding: 0;
+    margin-bottom: 0.4em;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #cccccc;
+    position: relative;
+    border: 0;
+    margin: 0.5em 0 1em;
+  }
+  .keywords {
+    list-style: circle;
+    padding: 0 1.4em;
+    margin-bottom: 0.6em;
+    li {
+      line-height: 1.65em;
+    }
+  }
 }

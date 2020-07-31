@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
             <i></i>
           </div>
           <div className="main">
-            <img src={item.imgBack} alt="" />
+            <img src={item.imgMain} alt="" />
             <div className="tags">
               <div>
                 <ul>

@@ -6,16 +6,17 @@
 }
 
 body {
-  font-family: "Raleway";
-  color: #ffffff;
+  font-family: "Lato";
+  color: $color-white;
   font-size: 12pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   overflow-x: hidden;
   text-align: center;
-  background: #1d1d1d;
-  height: 100vh;
+  background: #2a2a2a;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 #root {
@@ -27,10 +28,15 @@ body {
   margin-left: 62px;
 }
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
+
+  @each $bp, $container-size in $container-sizes {
+    @include min(#{bp(#{$bp})}) {
+      width: 100%;
+      max-width: container(#{$bp});
+    }
+  }
 }
 section {
   position: relative;
@@ -44,11 +50,11 @@ section {
   font-size: 30pt;
   font-weight: 700;
   text-align: center;
-  color: #e31b6d;
+  color: $color-main;
   letter-spacing: 2px;
 }
 .ttl-bar {
-  background: #e31b6d;
+  background: $color-main;
   height: 4px;
   margin: 25px auto 70px;
   width: 70px;
@@ -99,7 +105,7 @@ p {
 }
 
 .red {
-  color: #e31b6d;
+  color: $color-main;
 }
 
 /* ------------------ font icomoon ------------------ */
@@ -181,7 +187,7 @@ p {
 }
 .loading .progress-bar_bg {
   height: 1px;
-  background: #e31b6d;
+  background: $color-main;
   width: 0;
 }
 .loading .loading-logo img {
@@ -191,9 +197,9 @@ p {
 
 /* ------------------ button ------------------ */
 .aws-btn {
+  white-space: nowrap;
   &.btn-primary {
     font-family: "Lato", sans-serif;
-    white-space: nowrap;
     text-transform: uppercase;
     --button-default-height: 55px;
     --button-default-font-size: 18px;

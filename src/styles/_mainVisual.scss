@@ -1,5 +1,5 @@
 #home {
-  height: calc(100vh + 53px);
+  height: 100vh;
   padding: 0;
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: 15px;
 }
 .highlight {
-  color: #e31b6d;
+  color: $color-main;
 }
 .mainText .highlight {
   font-weight: 600;
@@ -71,8 +71,8 @@
   transition: transform 0.3s;
 }
 .mainText .button:hover {
-  background-color: #e31b6d;
-  border-color: #e31b6d;
+  background-color: $color-main;
+  border-color: $color-main;
   color: #ffffff;
 }
 .mainText .button:hover .mdi {
@@ -91,11 +91,11 @@
   justify-content: space-between;
   z-index: 3;
   min-height: 500px;
-  border-right: 2px solid #e31b6d;
+  border-right: 2px solid $color-main;
 }
 .navbar .logo {
   display: block;
-  padding: 8px 0;
+  padding: 8px 0 8px 10px;
 }
 .page-link {
   font-size: 20px;
@@ -119,7 +119,7 @@
   width: 100%;
   text-align: center;
   opacity: 0;
-  color: #e31b6d;
+  color: $color-main;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -149,7 +149,7 @@
 .page-link:hover,
 .list-sns li a:hover,
 .page-link.active {
-  color: #e31b6d;
+  color: $color-main;
   transition: all 0.5s;
 }
 

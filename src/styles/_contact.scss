@@ -1,0 +1,89 @@
+#contact {
+  padding: 3em 0;
+  text-align: left;
+  p {
+    font-size: 1.15em;
+    line-height: 1.7em;
+  }
+  h3 {
+    color: #cacaca;
+    font-size: 2.625em;
+    line-height: 1.45em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 0.1em;
+    width: 100%;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+  }
+  a {
+    font-weight: bold;
+  }
+}
+
+.formContact {
+  margin-top: 40px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+      margin-bottom: 10px;
+      &.half {
+        width: 49%;
+        margin-left: 2%;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .input {
+    &__field {
+      width: 100%;
+      border: 0;
+      background: #404040;
+      height: 50px;
+      font-size: 16px;
+      color: #8d8d8d;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #404040;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+  .flat-button {
+    color: $color-main;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid $color-main;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: $color-bla;
+      background: $color-main;
+    }
+  }
+}
+
+.list-socical {
+  display: flex;
+  margin-top: 15px;
+  li {
+    margin-right: 1em;
+  }
+}

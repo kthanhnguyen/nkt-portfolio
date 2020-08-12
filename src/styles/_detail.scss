@@ -21,6 +21,9 @@
   .awssld__bullets button {
     background-color: #fff;
   }
+  @include mediaQuery("md") {
+    margin-top: 60px;
+  }
 }
 .awssld__content .caption {
   display: -webkit-box;

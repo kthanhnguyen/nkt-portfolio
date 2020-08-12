@@ -2,13 +2,23 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+    };
+  }
+
+  toggle(e) {
+    this.setState({ active: !this.state.active });
+  }
   render() {
     return (
       <div className="navbar">
         <Link className="logo" to="/">
           <img src="/img/logo.png" alt="" />
         </Link>
-        <nav>
+        <nav className={this.state.active ? "active" : ""}>
           <NavLink
             to="/"
             exact
@@ -67,11 +77,15 @@ export default class Navbar extends Component {
           </li>
         </ul>
 
-        <Link to="" id="mobile-link">
+        <div
+          id="mobile-link"
+          className={this.state.active ? "active" : ""}
+          onClick={(e) => this.toggle(e)}
+        >
           <span></span>
           <span></span>
           <span></span>
-        </Link>
+        </div>
       </div>
     );
   }

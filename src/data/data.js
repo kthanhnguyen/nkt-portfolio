@@ -130,6 +130,6 @@ exports.data = [
     ],
     listImgs: ["01", "02", "03", "04", "05"],
     tags: ["HTML", "CSS", "JAVASCRIPT", "JQUERY"],
-    link: "https://www.duskin.jp/item/mat/collection/",
+    link: "https://www.tutuanna.jp/lp/sporty/",
   },
 ];

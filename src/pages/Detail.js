@@ -23,7 +23,7 @@ export default class Detail extends Component {
     console.log(itemFound);
     return (
       <section id="detail" className="detail">
-        <ItemProject itemFound={itemFound} />
+        <ItemProject itemFound={itemFound} index={itemFound.id} />
       </section>
     );
   }

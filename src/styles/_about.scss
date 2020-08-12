@@ -2,6 +2,9 @@
   text-align: left;
   height: 100vh;
   box-sizing: border-box;
+  .aws-btn--primary {
+    margin-top: 10px !important;
+  }
 }
 #about .flex.row {
   position: relative;
@@ -26,6 +29,10 @@
   transform-style: preserve-3d;
   animation: spin 10s linear infinite;
   transform-origin: 116px 200px 116px;
+
+  @include mediaQuery("md") {
+    display: none;
+  }
 }
 
 @-webkit-keyframes spin {
@@ -147,8 +154,4 @@
     translateY(-200px) translateZ(326px);
   transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px)
     translateY(-200px) translateZ(326px);
-}
-
-.about-left {
-  text-align: justify;
 }

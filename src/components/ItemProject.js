@@ -37,8 +37,11 @@ export default class ItemProject extends Component {
             animation="cubeAnimation"
             cssModule={[AwsSliderStyles]}
           >
-            {itemFound.listImgs.map((img) => (
-              <div data-src={`/project/${itemFound.id}/${img}.png`}></div>
+            {itemFound.listImgs.map((img, index) => (
+              <div
+                data-src={`/project/${itemFound.id}/${img}.png`}
+                key={index}
+              ></div>
             ))}
           </AwesomeSlider>
         </div>

@@ -32,6 +32,7 @@ export default class Contact extends Component {
                   name="name"
                   autoComplete="off"
                 />
+                <label className="input__label input__label--hoshi"></label>
               </li>
               <li className="half">
                 <input
@@ -41,6 +42,7 @@ export default class Contact extends Component {
                   name="email"
                   autoComplete="off"
                 />
+                <label className="input__label input__label--hoshi"></label>
               </li>
               <li>
                 <input
@@ -49,6 +51,7 @@ export default class Contact extends Component {
                   type="text"
                   name="subject"
                 />
+                <label className="input__label input__label--hoshi"></label>
               </li>
               <li>
                 <textarea
@@ -57,6 +60,7 @@ export default class Contact extends Component {
                   name="msg"
                   defaultValue={""}
                 />
+                <label className="input__label input__label--hoshi"></label>
               </li>
               <li>
                 <input

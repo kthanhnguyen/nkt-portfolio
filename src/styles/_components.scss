@@ -30,7 +30,7 @@ body {
 .container {
   padding: 0 20px;
   margin: 0 auto;
-
+  box-sizing: border-box;
   @each $bp, $container-size in $container-sizes {
     @include min(#{bp(#{$bp})}) {
       width: 100%;
@@ -58,6 +58,9 @@ section {
   height: 4px;
   margin: 25px auto 70px;
   width: 70px;
+  @include mediaQuery("md") {
+    margin: 15px auto 40px;
+  }
 }
 .flex {
   align-items: center;
@@ -75,6 +78,11 @@ section {
   flex: 1 1 50%;
   max-height: 100%;
   max-width: 50%;
+  @include mediaQuery("md") {
+    flex: 1 1 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 .flex-30 {
@@ -180,6 +188,9 @@ p {
   max-width: 100%;
   height: 160px;
   text-align: center;
+  @include mediaQuery("md") {
+    width: 80%;
+  }
 }
 .loading .progress-bar {
   height: 1px;
@@ -217,6 +228,9 @@ p {
   .i-svg {
     width: 24px;
     height: 24px;
+    &.imgCv {
+      margin-right: 10px !important;
+    }
   }
 }
 
@@ -235,6 +249,191 @@ p {
       width: 22px;
       height: 22px;
       margin-right: 10px;
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+/* ================= Navbar ================= */
+.navbar {
+  background: #1b242f;
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+  min-height: 500px;
+  border-right: 2px solid $color-main;
+  @include mediaQuery("md") {
+    width: 100%;
+    height: auto;
+  }
+}
+.navbar .logo {
+  display: block;
+  padding: 8px 0 8px 10px;
+}
+.page-link {
+  font-size: 20px;
+  color: #909096;
+  margin-bottom: 15px;
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar .page-link:after {
+  content: "";
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: $color-main;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar .page-link.home-link:after {
+  content: "HOME";
+}
+.navbar .page-link.about-link:after {
+  content: "ABOUT";
+}
+.navbar .page-link.skills-link:after {
+  content: "SKILLS";
+}
+.navbar .page-link.portfolio-link:after {
+  content: "PROJECT";
+}
+.navbar .page-link.contact-link:after {
+  content: "CONTACT";
+}
+
+.navbar .page-link:hover:after {
+  opacity: 1;
+}
+.navbar .page-link:hover i {
+  opacity: 0;
+}
+.page-link:hover,
+.list-sns li a:hover,
+.page-link.active {
+  color: $color-main;
+  transition: all 0.5s;
+}
+
+.navbar .page-link i {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.list-sns li a {
+  display: block;
+  font-size: 20px;
+  color: #909096;
+  margin: 20px 0;
+}
+
+#mobile-link {
+  display: none;
+}
+@include mediaQuery("md") {
+  .list-sns {
+    display: none;
+  }
+  .navbar {
+    min-height: auto;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-right: 0;
+    border-bottom: 2px solid $color-main;
+    nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      left: 0;
+      top: 60px;
+      background: $color-bla;
+      transform: translateX(100%);
+      transition: all 0.5s;
+      &.active {
+        transform: translateX(0);
+      }
+      .page-link {
+        margin-bottom: 0;
+        line-height: 60px;
+        height: 60px;
+      }
+    }
+    .logo {
+      width: 50px;
+      padding: 0;
+    }
+  }
+  .content {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  #mobile-link {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    &,
+    span {
+      display: inline-block;
+      transition: all 0.5s;
+      box-sizing: border-box;
+    }
+    span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-white;
+      border-radius: 4px;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      &:nth-of-type(3) {
+        bottom: 0;
+      }
+    }
+    &.active {
+      span {
+        &:nth-of-type(1) {
+          -webkit-transform: translateY(12px) rotate(-315deg);
+          transform: translateY(12px) rotate(-315deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          -webkit-transform: translateY(-12px) rotate(315deg);
+          transform: translateY(-12px) rotate(315deg);
+        }
+      }
     }
   }
 }

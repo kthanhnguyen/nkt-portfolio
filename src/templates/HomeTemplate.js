@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
+import Cursor from "../components/Cursor";
 
 const HomeLayout = (props) => {
   return (
@@ -18,9 +19,12 @@ function HomeTemplate({ Component, ...props }) {
       <Route
         {...props}
         render={(propsComponent) => (
-          <HomeLayout>
-            <Component {...propsComponent} />
-          </HomeLayout>
+          <Fragment>
+            <Cursor />
+            <HomeLayout>
+              <Component {...propsComponent} />
+            </HomeLayout>
+          </Fragment>
         )}
       />
     </Fragment>

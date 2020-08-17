@@ -17,6 +17,7 @@ body {
   background: #2a2a2a;
   height: 100%;
   box-sizing: border-box;
+  cursor: none;
 }
 
 #root {
@@ -47,7 +48,7 @@ section {
 
 .sec-ttl {
   font-family: "coolvetica";
-  font-size: 30pt;
+  font-size: 40pt;
   font-weight: 700;
   text-align: center;
   color: $color-main;
@@ -56,7 +57,7 @@ section {
 .ttl-bar {
   background: $color-main;
   height: 4px;
-  margin: 25px auto 70px;
+  margin: 25px auto 50px;
   width: 70px;
   @include mediaQuery("md") {
     margin: 15px auto 40px;
@@ -71,6 +72,23 @@ section {
 .flex.row {
   flex-direction: row;
 }
+
+.flex-30 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 30%;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  max-height: 100%;
+  max-width: 30%;
+}
+.flex-40 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 40%;
+  -ms-flex: 1 1 40%;
+  flex: 1 1 40%;
+  max-height: 100%;
+  max-width: 40%;
+}
 .flex-50 {
   box-sizing: border-box;
   -webkit-flex: 1 1 50%;
@@ -84,16 +102,14 @@ section {
     max-width: 100%;
   }
 }
-
-.flex-30 {
+.flex-60 {
   box-sizing: border-box;
-  -webkit-flex: 1 1 30%;
-  -ms-flex: 1 1 30%;
-  flex: 1 1 30%;
-  max-height: 100%;
-  max-width: 30%;
+  -webkit-flex: 1 1 60%;
+  -ms-flex: 1 1 60%;
+  flex: 1 1 60%;
+  max-height: 600%;
+  max-width: 60%;
 }
-
 .flex-70 {
   box-sizing: border-box;
   -webkit-flex: 1 1 70%;
@@ -436,4 +452,27 @@ p {
       }
     }
   }
+}
+
+/* cursor */
+.cursor,
+.cursor2,
+.cursor3 {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  z-index: 9999999;
+}
+.cursor {
+  background-color: $color-white;
+  height: 15px;
+  width: 15px;
+  z-index: 9999999;
 }

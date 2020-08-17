@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TagCanvas from "../helpers/examples";
+import TagCanvas from "../helpers/tagcanvas";
 import { Link } from "react-router-dom";
 
 export default class Skills extends Component {
@@ -37,11 +37,22 @@ export default class Skills extends Component {
       <section id="skills">
         <div className="container">
           <div className="flex row">
-            <div className="flex flex-50">
+            <div className="flex-50 skills__info">
               <h2 className="sec-ttl">Skills</h2>
               <div className="ttl-bar"></div>
+              <p>
+                The main area of my expertise is front end development (client
+                side of the web).
+              </p>
+              <p>
+                Worked on a multitude of web and print based projects for a
+                range of clients providing Web Design (Photoshop, Adobe Xd) and
+                Development (HTML, CSS, SASS, JS, jQuery, Bootstrap, Responsive
+                Layouts, Browser compatibility).
+              </p>
+              <p>Familiar frameworks like ReactJS, Angular2+.</p>
             </div>
-            <div className="flex flex-50">
+            <div className="flex-50">
               <canvas width="500" height="500" id="myCanvas">
                 <p>
                   Anything in here will be replaced on browsers that support the
@@ -49,61 +60,92 @@ export default class Skills extends Component {
                 </p>
                 <ul>
                   <li>
-                    <Link to="/">HTML 5</Link>
+                    <Link to="https://en.wikipedia.org/wiki/HTML">HTML 5</Link>
                   </li>
                   <li>
-                    <Link to="/">CSS</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
+                      CSS
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">JavaScript</Link>
+                    <Link to="https://en.wikipedia.org/wiki/JavaScript">
+                      JavaScript
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">TypeScript</Link>
+                    <Link to="https://en.wikipedia.org/wiki/JavaScript">
+                      TypeScript
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">REST</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Representational_state_transfer">
+                      REST
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">JSON</Link>
+                    <Link to="https://en.wikipedia.org/wiki/JSON">JSON</Link>
                   </li>
                   <li>
-                    <Link to="/">React</Link>
+                    <Link to="https://en.wikipedia.org/wiki/React_(web_framework)">
+                      ReactJS
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">Redux</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Redux_(JavaScript_library)">
+                      Redux
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">Angular 2+</Link>
+                    <Link to="https://en.wikipedia.org/wiki/AngularJS">
+                      Angular 2+
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">Git</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Node.js">
+                      Node JS
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">_lodash</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Git">Git</Link>
                   </li>
                   <li>
-                    <Link to="/">Bootstrap</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Lodash">
+                      _lodash
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">SASS</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">
+                      Bootstrap
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">jQuery</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)">
+                      SASS
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">Gulp</Link>
+                    <Link to="https://en.wikipedia.org/wiki/JQuery">
+                      jQuery
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/">npm</Link>
+                    <Link to="http://gulpjs.com/">Gulp</Link>
                   </li>
                   <li>
-                    <Link to="/">BEM</Link>
+                    <Link to="https://www.npmjs.com/">npm</Link>
                   </li>
                   <li>
-                    <Link to="/">Photoshop</Link>
+                    <Link to="https://en.wikipedia.org/wiki/BEM">BEM</Link>
                   </li>
                   <li>
-                    <Link to="/">Firebase</Link>
+                    <Link to="https://en.wikipedia.org/wiki/Adobe_Photoshop">
+                      Photoshop
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="https://en.wikipedia.org/wiki/Firebase">
+                      Firebase
+                    </Link>
                   </li>
                 </ul>
               </canvas>

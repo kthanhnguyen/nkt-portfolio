@@ -20,7 +20,6 @@ function HomeTemplate({ Component, ...props }) {
         {...props}
         render={(propsComponent) => (
           <Fragment>
-            <Cursor />
             <HomeLayout>
               <Component {...propsComponent} />
             </HomeLayout>

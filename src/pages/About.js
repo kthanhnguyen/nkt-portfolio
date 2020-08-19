@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import { AwesomeButton } from "react-awesome-button";
 
+import Cursor from "../components/Cursor";
+
 export default class About extends Component {
   componentDidMount() {
     document.title = "About";
@@ -154,6 +156,7 @@ export default class About extends Component {
             </div>
           </div>
         </section>
+        <Cursor />
       </Fragment>
     );
   }

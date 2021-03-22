@@ -4,7 +4,7 @@ import MainVisual from "../components/MainVisual";
 
 export default class Home extends Component {
   componentDidMount() {
-    document.title = "Home";
+    document.title = "Home | NKT";
   }
   render() {
     return (

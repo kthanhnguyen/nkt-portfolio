@@ -11,7 +11,7 @@ export default class Detail extends Component {
       return item.id === id;
     });
 
-    document.title = `${itemFound.name}`;
+    document.title = `${itemFound.name} | NKT`;
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class Detail extends Component {
     let itemFound = data.find((item) => {
       return item.id === id;
     });
-    console.log(itemFound);
+
     return (
       <section id="detail" className="detail">
         <ItemProject itemFound={itemFound} index={itemFound.id} />

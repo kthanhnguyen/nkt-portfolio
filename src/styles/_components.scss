@@ -5,6 +5,10 @@
   font-weight: 500;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato";
   color: $color-white;
@@ -15,12 +19,12 @@ body {
   overflow-x: hidden;
   text-align: center;
   background: #2a2a2a;
-  height: 100%;
+  // height: 100%;
   box-sizing: border-box;
 }
-* {
-  cursor: none;
-}
+// * {
+//   cursor: none;
+// }
 #root {
   height: 100%;
 }
@@ -132,7 +136,9 @@ p {
 .red {
   color: $color-main;
 }
-
+.dis-scroll {
+  overflow: hidden;
+}
 /* ------------------ font icomoon ------------------ */
 @font-face {
   font-family: "icomoon";
@@ -290,11 +296,13 @@ p {
     width: 100%;
     height: auto;
   }
+
+  .logo {
+    display: block;
+    padding: 15px 0 8px 10px;
+  }
 }
-.navbar .logo {
-  display: block;
-  padding: 8px 0 8px 10px;
-}
+
 .page-link {
   font-size: 20px;
   color: #909096;

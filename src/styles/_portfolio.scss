@@ -21,8 +21,9 @@
     width: calc(100% / 3 - (20px * 3));
     padding: 0 20px;
     margin-bottom: 3em;
-    & > a {
+    & > .item {
       position: relative;
+      cursor: pointer;
     }
   }
   @include mediaQuery("md") {
@@ -46,7 +47,7 @@
 .grid-list .bar h3 {
   content: attr(data-text);
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-weight: 700;
@@ -80,7 +81,7 @@
 }
 .grid-list .main {
   background-size: cover;
-  padding-top: 58%;
+  padding-top: 50%;
   position: relative;
   background-position: center center;
   display: block;

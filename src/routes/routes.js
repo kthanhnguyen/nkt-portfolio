@@ -28,11 +28,6 @@ const routesHome = [
     component: Portfolio,
   },
   {
-    path: "/portfolio/:id",
-    exact: true,
-    component: Detail,
-  },
-  {
     path: "/contact",
     exact: true,
     component: Contact,

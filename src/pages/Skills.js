@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default class Skills extends Component {
   componentDidMount() {
-    document.title = "Skills";
+    document.title = "Skills | NKT";
 
     this.setTime = setInterval(() => {
       this.forceUpdate();

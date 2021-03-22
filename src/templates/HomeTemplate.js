@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
-import Cursor from "../components/Cursor";
 
 const HomeLayout = (props) => {
   return (

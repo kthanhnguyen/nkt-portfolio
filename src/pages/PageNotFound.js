@@ -3,6 +3,9 @@ import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 
 export default class PageNotFound extends Component {
+  componentDidMount() {
+    document.title = "Page Not Found | NKT";
+  }
   render() {
     return (
       <section id="not-found">

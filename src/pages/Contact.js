@@ -3,7 +3,7 @@ import { AwesomeButton } from "react-awesome-button";
 
 export default class Contact extends Component {
   componentDidMount() {
-    document.title = "Contact";
+    document.title = "Contact | NKT";
   }
   render() {
     return (

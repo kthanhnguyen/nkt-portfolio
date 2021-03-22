@@ -45,7 +45,8 @@ class Portfolio extends Component {
 
   _closeModal = () => {
     document.body.className = "";
-    this.setState({ mId: "01", mShow: false, mOut: true });
+    this.setState({ mShow: false, mOut: true });
+    
   };
 
   _openModal = (id) => {

@@ -96,8 +96,8 @@ export default class ItemProject extends Component {
           </p>
           <hr />
           <ul className="keywords">
-            {itemFound.technical.map((tech) => (
-              <li>{tech}</li>
+            {itemFound.technical.map((tech, index) => (
+              <li key={index}>{tech}</li>
             ))}
           </ul>
         </div>

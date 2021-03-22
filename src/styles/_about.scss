@@ -5,6 +5,9 @@
   .aws-btn--primary {
     margin-top: 10px !important;
   }
+  @include mediaQuery("md") {
+    margin-top: -60px;
+  }
 }
 #about .flex.row {
   position: relative;

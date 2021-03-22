@@ -84,7 +84,7 @@ export default class MainVisual extends Component {
             enable: true,
             mode: "repulse",
           },
-          resize: true,
+          // resize: true,
         },
         modes: {
           grab: {
@@ -116,16 +116,16 @@ export default class MainVisual extends Component {
     };
     return (
       <section id="home">
-        <div className="particles">
+        <div className="home__particles">
           <Particles params={params} />
-          <div className="mainText">
-            <div className="text">
-              Hello, I'm <span className="highlight">Nguyen Kim Thanh</span>
+          <div className="home__mainText">
+            <div className="home__text">
+              Hello, I'm <span className="home__text--highlight">Nguyen Kim Thanh</span>
               <br />
               I'm a front-end web developer.
             </div>
             <div className="text-center">
-              <Link to="/portfolio" className="button">
+              <Link to="/portfolio" className="home__button">
                 View my work <i className="mdi mdi-arrow-right" />
               </Link>
             </div>

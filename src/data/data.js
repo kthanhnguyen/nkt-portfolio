@@ -62,7 +62,7 @@ exports.data = [
       "Animation",
       "Tweenmax.js",
     ],
-    listImgs: ["01", "02"],
+    listImgs: ["01", "02", "03", "04"],
     tags: ["HTML", "SCSS", "JQUERY", "ANIMATIONS", "TWEENMAX"],
     link: "https://www.trans-cosmos.co.jp/transcosmos-analytics/recruit/",
   },
@@ -83,7 +83,7 @@ exports.data = [
       "CSS3",
       "Bootstrap",
     ],
-    listImgs: ["01", "02"],
+    listImgs: ["01", "02", "03", "04"],
     tags: ["HTML", "SCSS", "JQUERY", "BOOTSTRAP 4", "GULP"],
     link: "https://www.japanmeetings.org/",
   },
@@ -163,5 +163,29 @@ exports.data = [
       "DRUPAL",
     ],
     link: "https://tabilover.jcb.jp/",
+  },
+  {
+    id: "09",
+    name: "TOYOBO",
+    imgMain: "/project/09/01.png",
+    about: [
+      "Toyobo company website (Films and Functional Polymers, Industrial Materials, and Healthcare)",
+      "This project, I act as front end developer. Data is based on old website, content correction according to customer opinion."
+    ],
+    technical: [
+      "Front-End Development",
+      "Javascript",
+      "JQuery",
+      "HTML5",
+      "CSS3"
+    ],
+    listImgs: ["01", "02", "03"],
+    tags: [
+      "HTML",
+      "CSS",,
+      "JAVASCRIPT",
+      "JQUERY",
+    ],
+    link: "https://www.toyobo.co.jp/",
   },
 ];

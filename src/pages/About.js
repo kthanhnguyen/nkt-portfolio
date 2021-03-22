@@ -14,7 +14,7 @@ export default class About extends Component {
               <div className="flex flex-50">
                 <h2 className="sec-ttl">About</h2>
                 <div className="ttl-bar"></div>
-                <div className="about-text">
+                <div className="about__text">
                   <p>
                     Hi, I'm Thanh. A website developer, currently working at Ho
                     Chi Minh city.

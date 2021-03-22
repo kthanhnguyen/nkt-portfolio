@@ -2,9 +2,8 @@
   height: 100vh;
   box-sizing: border-box;
   text-align: left;
-  p {
-    font-size: 18px;
-    line-height: 2;
+  @include mediaQuery("md") {
+    height: auto;
   }
 }
 #skills .container {
@@ -17,10 +16,19 @@
 }
 
 #myCanvas li a {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .skills {
   &__info {
     padding-right: 5em;
+    @include mediaQuery("md") {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  @include mediaQuery("md") {
+    .flex.row {
+      flex-direction: column;
+    }
   }
 }

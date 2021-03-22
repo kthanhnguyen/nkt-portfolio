@@ -34,7 +34,7 @@ export default class Skills extends Component {
 
   render() {
     return (
-      <section id="skills">
+      <section id="skills" className="skills">
         <div className="container">
           <div className="flex row">
             <div className="flex-50 skills__info">

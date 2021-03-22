@@ -6,25 +6,22 @@
 }
 
 html {
+  font-family: "Lato";
+  color: $color-white;
   height: 100%;
+  font-size: 10px;
+  text-align: center;
+  background: #2a2a2a;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato";
-  color: $color-white;
-  font-size: 12pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   overflow-x: hidden;
-  text-align: center;
-  background: #2a2a2a;
-  // height: 100%;
-  box-sizing: border-box;
 }
-// * {
-//   cursor: none;
-// }
+
 #root {
   height: 100%;
 }
@@ -53,11 +50,14 @@ section {
 
 .sec-ttl {
   font-family: "coolvetica";
-  font-size: 40pt;
+  font-size: 5.3rem;
   font-weight: 700;
   text-align: center;
   color: $color-main;
   letter-spacing: 2px;
+  @include mediaQuery("md") {
+    font-size: 3.5rem;
+  }
 }
 .ttl-bar {
   background: $color-main;
@@ -125,8 +125,12 @@ section {
 }
 
 p {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   line-height: 1.5;
+  @include mediaQuery("md") {
+    font-size: 1.5rem;
+  }
 }
 
 .bgGray {
@@ -194,8 +198,6 @@ p {
   right: 0;
   background: #181818;
   z-index: 2;
-  /* display: none; */
-  /* overflow: hidden; */
   height: 100%;
   width: 100%;
   text-align: center;
@@ -236,7 +238,7 @@ p {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     --button-default-height: 55px;
-    --button-default-font-size: 18px;
+    --button-default-font-size: 16px;
     --button-default-border-radius: 6px;
     --button-horizontal-padding: 35px;
     --button-raise-level: 5px;
@@ -258,11 +260,14 @@ p {
 }
 
 #not-found {
+  .content {
+    height: 100vh;
+  }
   .container {
     font-family: "coolvetica";
     p {
       line-height: 1;
-      font-size: 70px;
+      font-size: 6rem;
       margin-bottom: 0;
     }
   }
@@ -304,7 +309,7 @@ p {
 }
 
 .page-link {
-  font-size: 20px;
+  font-size: 2rem;
   color: #909096;
   margin-bottom: 15px;
   display: block;
@@ -316,7 +321,7 @@ p {
 
 .navbar .page-link:after {
   content: "";
-  font-size: 9px;
+  font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 2px;
   position: absolute;
@@ -365,7 +370,7 @@ p {
 }
 .list-sns li a {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   color: #909096;
   margin: 20px 0;
 }
@@ -387,11 +392,13 @@ p {
     border-right: 0;
     border-bottom: 2px solid $color-main;
     nav {
-      position: absolute;
+      position: fixed;
       width: 100%;
+      height: calc(100% - 60px);
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
       left: 0;
       top: 60px;
       background: $color-bla;
@@ -401,9 +408,17 @@ p {
         transform: translateX(0);
       }
       .page-link {
-        margin-bottom: 0;
         line-height: 60px;
         height: 60px;
+        margin: 10px 0;
+        &::after {
+          position: relative;
+          opacity: 1;
+          font-size: 2rem;
+        }
+        i {
+          display: none;
+        }
       }
     }
     .logo {
@@ -415,6 +430,11 @@ p {
     margin-left: 0;
     width: 100%;
     height: auto;
+    margin-top: 60px;
+  }
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   #mobile-link {
     display: block;

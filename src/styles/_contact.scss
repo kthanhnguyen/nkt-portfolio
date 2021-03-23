@@ -16,6 +16,7 @@
   }
   @include mediaQuery("md") {
     margin-top: 60px;
+    padding: 0;
   }
 }
 

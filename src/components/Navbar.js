@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { TweenMax, Expo } from "gsap/all";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -7,18 +8,62 @@ export default class Navbar extends Component {
     this.state = {
       active: false,
     };
+
+    this.loading = null;
+    this.loadingMenu = null;
+
   }
 
   toggle(e) {
+    
+
+    document.body.classList.toggle("dis-scroll");
     this.setState({ active: !this.state.active });
+
+    const { active } = this.state;
+    let vw = window.innerWidth, delay_time = 0;
+    let elm = document.querySelectorAll("nav > a");
+
+    if (!active) {
+      this.loadingMenu = TweenMax.to(this.loading, 0.5, {
+      x:-vw,
+      ease: Expo.easeInOut
+    });
+    elm.forEach(item => {
+      this.loading = TweenMax.to(item, 1.2, {
+        x:-vw,
+        scaleX: 1,
+        delay: delay_time,
+        ease: Expo.easeInOut
+      });
+      delay_time += .04;
+      item.addEventListener('click', ()=> {
+        document.body.className = "";
+      })
+    })
+    } else {
+      this.loading = TweenMax.to(this.loading, 0.8, {
+        x:0,
+        ease: Expo.easeInOut
+      });
+      elm.forEach(item => {
+        this.loading = TweenMax.to(item, 1, {
+          x:0,
+          delay: delay_time,
+          ease: Expo.easeInOut
+        });
+        delay_time += .02;
+      })
+    }
   }
+
   render() {
     return (
       <div className="navbar">
         <Link className="logo" to="/">
           <img src="/img/logo.png" alt="" />
         </Link>
-        <nav className={this.state.active ? "active" : ""}>
+        <nav className={this.state.active ? "active" : ""} ref={(div) => (this.loading = div)}>
           <NavLink
             to="/"
             exact

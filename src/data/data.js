@@ -22,7 +22,7 @@ exports.data = [
     imgMain: "/project/01/01.png",
     listImgs: ["01", "02", "03", "04", "05", "06", "07"],
     tags: ["HTML", "SCSS", "REACT", "REDUX", "FIREBASE"],
-    link: "https://react-courseonline.web.app/",
+    link: "https://react-courseonline.web.app/"
   },
   {
     id: "02",
@@ -43,7 +43,7 @@ exports.data = [
     imgMain: "/project/02/01.png",
     listImgs: ["01", "02", "03", "04"],
     tags: ["HTML", "SCSS", "ANGULAR 8", "BOOTSTRAP", "API"],
-    link: "#",
+    link: "#"
   },
   {
     id: "03",
@@ -60,11 +60,11 @@ exports.data = [
       "HTML5",
       "CSS3",
       "Animation",
-      "Tweenmax.js",
+      "Tweenmax.js"
     ],
     listImgs: ["01", "02", "03", "04"],
     tags: ["HTML", "SCSS", "JQUERY", "ANIMATIONS", "TWEENMAX"],
-    link: "https://www.trans-cosmos.co.jp/transcosmos-analytics/recruit/",
+    link: "https://www.trans-cosmos.co.jp/transcosmos-analytics/recruit/"
   },
   {
     id: "04",
@@ -81,11 +81,11 @@ exports.data = [
       "JQuery",
       "HTML5",
       "CSS3",
-      "Bootstrap",
+      "Bootstrap"
     ],
     listImgs: ["01", "02", "03", "04"],
     tags: ["HTML", "SCSS", "JQUERY", "BOOTSTRAP 4", "GULP"],
-    link: "https://www.japanmeetings.org/",
+    link: "https://www.japanmeetings.org/"
   },
   {
     id: "05",
@@ -98,7 +98,7 @@ exports.data = [
     technical: ["Front-End Development", "Javascript", "HTML5 - canvas", "CSS"],
     listImgs: ["01", "02"],
     tags: ["HTML", "CSS", "ANIMATIONS", "JAVASCRIPT", "CANVAS"],
-    link: "https://kthanhnguyen.github.io/javascript/monster/",
+    link: "https://kthanhnguyen.github.io/javascript/monster/"
   },
   {
     id: "06",
@@ -111,7 +111,7 @@ exports.data = [
     technical: ["Front-End Development", "HTML5", "CSS3", "Javascript"],
     listImgs: ["01", "02", "03", "04", "05"],
     tags: ["HTML", "CSS", "JAVASCRIPT"],
-    link: "https://www.duskin.jp/item/mat/collection/",
+    link: "https://www.duskin.jp/item/mat/collection/"
   },
   {
     id: "07",
@@ -130,7 +130,7 @@ exports.data = [
     ],
     listImgs: ["01", "02", "03", "04", "05"],
     tags: ["HTML", "CSS", "JAVASCRIPT", "JQUERY"],
-    link: "https://www.tutuanna.jp/lp/sporty/",
+    link: "https://www.tutuanna.jp/lp/sporty/"
   },
   {
     id: "08",
@@ -162,7 +162,7 @@ exports.data = [
       "NODEJS",
       "DRUPAL",
     ],
-    link: "https://tabilover.jcb.jp/",
+    link: "https://tabilover.jcb.jp/"
   },
   {
     id: "09",
@@ -182,10 +182,10 @@ exports.data = [
     listImgs: ["01", "02", "03"],
     tags: [
       "HTML",
-      "CSS",,
+      "CSS",
       "JAVASCRIPT",
       "JQUERY",
     ],
-    link: "https://www.toyobo.co.jp/",
-  },
+    link: "https://www.toyobo.co.jp/"
+  }
 ];

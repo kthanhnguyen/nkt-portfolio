@@ -3,7 +3,6 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
-import Detail from "../pages/Detail";
 import PageNotFound from "../pages/PageNotFound";
 
 const routesHome = [

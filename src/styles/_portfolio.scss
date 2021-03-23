@@ -1,6 +1,9 @@
 #portfolio {
   display: block;
   padding-top: 70px;
+  @include mediaQuery("md") {
+    padding-top: 0;
+  }
 }
 
 .image {
@@ -49,7 +52,7 @@
 .grid-list .bar h3 {
   content: attr(data-text);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-weight: 700;
@@ -71,13 +74,13 @@
 }
 .grid-list .bar i:before {
   content: "";
-  left: 14px;
+  left: 13px;
   background-color: #ffbd2e;
   top: 0;
 }
 .grid-list .bar i:after {
   content: "";
-  left: 28px;
+  left: 26px;
   background-color: #28ca41;
   top: 0;
 }

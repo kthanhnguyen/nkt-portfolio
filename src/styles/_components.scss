@@ -308,6 +308,8 @@ p {
   }
 }
 
+
+
 .page-link {
   font-size: 2rem;
   color: #909096;
@@ -317,6 +319,12 @@ p {
   height: 51px;
   position: relative;
   text-decoration: none;
+  &.active {
+    pointer-events: none;
+    i {
+      color: $color-main;
+    }
+  }
 }
 
 .navbar .page-link:after {
@@ -358,8 +366,7 @@ p {
   opacity: 0;
 }
 .page-link:hover,
-.list-sns li a:hover,
-.page-link.active {
+.list-sns li a:hover {
   color: $color-main;
   transition: all 0.5s;
 }
@@ -395,22 +402,28 @@ p {
       position: fixed;
       width: 100%;
       height: calc(100% - 60px);
+      top: 60px;
+      right: -100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      left: 0;
-      top: 60px;
       background: $color-bla;
-      transform: translateX(100%);
       transition: all 0.5s;
-      &.active {
-        transform: translateX(0);
-      }
       .page-link {
+        position: relative;
         line-height: 60px;
         height: 60px;
         margin: 10px 0;
+        left: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        &.active {
+          &::after {
+            opacity: 0.7;
+            color: $color-white;
+          }
+        }
         &::after {
           position: relative;
           opacity: 1;

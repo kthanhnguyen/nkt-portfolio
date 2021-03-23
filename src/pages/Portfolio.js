@@ -46,13 +46,18 @@ class Portfolio extends Component {
   _closeModal = () => {
     document.body.className = "";
     this.setState({ mShow: false, mOut: true });
-    
   };
 
   _openModal = (id) => {
     document.body.className = "dis-scroll";
     this.setState({ mId: id, mShow: true });
   };
+
+  _closeMaskModal = (e) => {
+    if(e.target.className === "modal-background") {
+      this._closeModal();
+    }
+  }
 
   render() {
     const { mShow, mId, mOut } = this.state;
@@ -72,6 +77,7 @@ class Portfolio extends Component {
           active={mShow}
           mOut={mOut}
           closeModal={this._closeModal}
+          closeMaskModal={this._closeMaskModal}
         />
       </Fragment>
     );

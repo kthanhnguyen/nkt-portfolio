@@ -142,7 +142,26 @@ p {
 }
 .dis-scroll {
   overflow: hidden;
+  padding-right: 17px;
+  @include mediaQuery("md") {
+    padding-right: 0;
+  }
 }
+
+.onlyPc {
+  display: block;
+  @include mediaQuery("md") {
+    display: none;
+  }
+}
+
+.onlySp {
+  display: none;
+  @include mediaQuery("md") {
+    display: block;
+  }
+}
+
 /* ------------------ font icomoon ------------------ */
 @font-face {
   font-family: "icomoon";

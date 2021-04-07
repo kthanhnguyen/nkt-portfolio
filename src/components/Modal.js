@@ -15,17 +15,16 @@ export default class Modal extends Component {
           mOut && !active ? "out" : ""
         }`}
       >
-        <div className="modal-background" onClick={closeMaskModal}>
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <ItemProject
-                itemFound={itemFound}
-                index={itemFound.id}
-              />
+        <div className="modal-background" onClick={closeMaskModal}></div>
+        <div className="modal-wrapper">
+            <div className="modal-content">
+              <span className="close" onClick={closeModal}>&times;</span>
+              <ItemProject
+                  itemFound={itemFound}
+                  index={itemFound.id}
+                />
+            </div>
           </div>
-        </div>
       </div>
     );
   }

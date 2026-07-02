@@ -1,4 +1,4 @@
-exports.data = [
+export const data = [
   {
     id: "01",
     name: "COURSES ONLINE",

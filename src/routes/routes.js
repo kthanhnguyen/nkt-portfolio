@@ -1,41 +1,40 @@
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Skills from "../pages/Skills";
-import Portfolio from "../pages/Portfolio";
-import Contact from "../pages/Contact";
-import PageNotFound from "../pages/PageNotFound";
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Skills from '../pages/Skills'
+import Portfolio from '../pages/Portfolio'
+import Contact from '../pages/Contact'
+import Detail from '../pages/Detail'
+import PageNotFound from '../pages/PageNotFound'
 
 const routesHome = [
   {
-    path: "/",
-    exact: true,
+    path: '/',
     component: Home,
   },
   {
-    path: "/about",
-    exact: true,
+    path: '/about',
     component: About,
   },
   {
-    path: "/skills",
-    exact: true,
+    path: '/skills',
     component: Skills,
   },
   {
-    path: "/portfolio",
-    exact: true,
+    path: '/portfolio',
     component: Portfolio,
   },
   {
-    path: "/contact",
-    exact: true,
+    path: '/portfolio/:id',
+    component: Detail,
+  },
+  {
+    path: '/contact',
     component: Contact,
   },
   {
-    path: "",
-    exact: false,
+    path: '*',
     component: PageNotFound,
   },
-];
+]
 
-export { routesHome };
+export { routesHome }

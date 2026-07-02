@@ -74,19 +74,14 @@ export default function Navbar() {
       </nav>
       <ul className="list-sns">
         <li>
-          <Link to="#" target="_blank">
-            <i className="mdi mdi-twitter" />
-          </Link>
-        </li>
-        <li>
-          <Link to="#" target="_blank">
+          <a href="https://www.linkedin.com/in/thanhnguyen901" target="_blank" rel="noopener noreferrer">
             <i className="mdi mdi-linkedin" />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#" target="_blank">
-            <i className="mdi mdi-facebook" />
-          </Link>
+          <a href="https://github.com/kthanhnguyen" target="_blank" rel="noopener noreferrer">
+            <i className="mdi mdi-github" />
+          </a>
         </li>
       </ul>
 

@@ -32,41 +32,51 @@ export default function Skills() {
             <h2 className="sec-ttl">Skills</h2>
             <div className="ttl-bar"></div>
             <p>
-              The main area of my expertise is front end development (client
-              side of the web).
+              My main area of expertise is frontend development, with a
+              strong focus on Vue (2/3) and solid experience across the
+              React ecosystem.
             </p>
             <p>
-              Worked on a multitude of web and print based projects for a
-              range of clients providing Web Design (Photoshop, Adobe Xd) and
-              Development (HTML, CSS, SASS, JS, jQuery, Bootstrap, Responsive
-              Layouts, Browser compatibility).
+              Worked on production-ready SaaS platforms — covering
+              component-based architecture, state management (Vuex, Redux),
+              and styling systems (Tailwind CSS, Material UI, Vuetify,
+              Bootstrap).
             </p>
-            <p>Familiar frameworks like ReactJS, Angular2+.</p>
+            <p>
+              Comfortable across the full delivery pipeline: Vite/Gulp
+              builds, Docker, CI/CD with Azure DevOps and GitHub Actions, and
+              collaborating with backend teams via REST APIs, Node.js, and
+              .NET.
+            </p>
           </div>
           <div className="flex-50">
             <canvas width="500" height="500" id="myCanvas">
               <p>Anything in here will be replaced on browsers that support the canvas element</p>
               <ul>
-                <li><Link to="https://en.wikipedia.org/wiki/HTML">HTML 5</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/JavaScript">JavaScript</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/JavaScript">TypeScript</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/JSON">JSON</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/React_(web_framework)">ReactJS</Link></li>
+                <li><Link to="https://vuejs.org/">Vue 2/3</Link></li>
+                <li><Link to="https://nuxt.com/">Nuxt</Link></li>
+                <li><Link to="https://react.dev/">React</Link></li>
+                <li><Link to="https://nextjs.org/">Next.js</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/JavaScript">JavaScript (ES6+)</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/HTML">HTML5</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</Link></li>
+                <li><Link to="https://sass-lang.com/">SCSS</Link></li>
+                <li><Link to="https://vuex.vuejs.org/">Vuex</Link></li>
                 <li><Link to="https://en.wikipedia.org/wiki/Redux_(JavaScript_library)">Redux</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/AngularJS">Angular 2+</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Node.js">Node JS</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Git">Git</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Lodash">_lodash</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">Bootstrap</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)">SASS</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/JQuery">jQuery</Link></li>
+                <li><Link to="https://tailwindcss.com/">Tailwind CSS</Link></li>
+                <li><Link to="https://mui.com/">Material UI</Link></li>
+                <li><Link to="https://vuetifyjs.com/">Vuetify</Link></li>
+                <li><Link to="https://getbootstrap.com/">Bootstrap</Link></li>
+                <li><Link to="https://vite.dev/">Vite</Link></li>
                 <li><Link to="http://gulpjs.com/">Gulp</Link></li>
-                <li><Link to="https://www.npmjs.com/">npm</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/BEM">BEM</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Adobe_Photoshop">Photoshop</Link></li>
-                <li><Link to="https://en.wikipedia.org/wiki/Firebase">Firebase</Link></li>
+                <li><Link to="https://www.docker.com/">Docker</Link></li>
+                <li><Link to="https://azure.microsoft.com/en-us/products/devops">Azure DevOps</Link></li>
+                <li><Link to="https://github.com/features/actions">GitHub Actions</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/Representational_state_transfer">REST APIs</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/Node.js">Node.js</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/Git">Git</Link></li>
+                <li><Link to="https://www.figma.com/">Figma</Link></li>
+                <li><Link to="https://en.wikipedia.org/wiki/Scrum_(software_development)">Agile/Scrum</Link></li>
               </ul>
             </canvas>
           </div>

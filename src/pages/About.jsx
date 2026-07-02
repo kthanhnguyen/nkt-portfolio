@@ -17,7 +17,7 @@ export default function About() {
               <div className="about__img onlySp"><img src="/img/about.jpg" alt="" /></div>
               <div className="about__text">
                 <p>
-                  Hi, I'm Thanh, a Senior Frontend Developer with 7+ years of
+                  Hi, I am Thanh, a Senior Frontend Developer with 7+ years of
                   experience building production-ready web applications for
                   SaaS platforms serving 1,000+ users. My core stack is Vue
                   (2/3), complemented by strong experience in React.
@@ -32,7 +32,7 @@ export default function About() {
                   Beyond hands-on development, I mentor junior developers
                   through code reviews and help build reusable component
                   libraries and design systems for cross-team consistency.
-                  I'm now looking for a senior-level role where I can
+                  I am now looking for a senior-level role where I can
                   contribute to scalable architecture and team growth.
                 </p>
                 <div className="about__btn">

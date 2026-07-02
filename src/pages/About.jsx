@@ -17,20 +17,30 @@ export default function About() {
               <div className="about__img onlySp"><img src="/img/about.jpg" alt="" /></div>
               <div className="about__text">
                 <p>
-                  Hi, I'm Thanh. A website developer, currently working at Ho
-                  Chi Minh city.
+                  Hi, I'm Thanh, a Senior Frontend Developer with 7+ years of
+                  experience building production-ready web applications for
+                  SaaS platforms serving 1,000+ users. My core stack is Vue
+                  (2/3), complemented by strong experience in React.
                 </p>
                 <p>
-                  I have a passion for the beauty, whether simple or
-                  extravagant. I also love coding and design. As someone who
-                  likes to watch movies and listen to music to relax.
+                  I specialize in refactoring legacy systems and improving
+                  frontend performance — work that has cut reported UI bugs
+                  by ~30% — while delivering scalable features within Agile,
+                  cross-functional teams (BA, UX/UI, Backend, QC).
                 </p>
                 <p>
-                  Interested in the entire frontend spectrum and working on
-                  ambitious projects with positive people.
+                  Beyond hands-on development, I mentor junior developers
+                  through code reviews and help build reusable component
+                  libraries and design systems for cross-team consistency.
+                  I'm now looking for a senior-level role where I can
+                  contribute to scalable architecture and team growth.
                 </p>
                 <div className="about__btn">
-                  <AwesomeButton type="primary" href="/" target="_blank">
+                  <AwesomeButton
+                    type="primary"
+                    href="/cv/Frontend_NguyenKimThanh.pdf"
+                    containerProps={{ target: '_blank', rel: 'noopener noreferrer' }}
+                  >
                     <svg
                       className="i-svg imgCv"
                       height={50}

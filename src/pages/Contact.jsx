@@ -48,7 +48,7 @@ export default function Contact() {
               GitHub
             </AwesomeButton>
           </li>
-          <li>
+          {/* <li>
             <AwesomeButton
               type="primary"
               href="/cv/Frontend_NguyenKimThanh.pdf"
@@ -64,7 +64,7 @@ export default function Contact() {
               </svg>{' '}
               Preview My CV
             </AwesomeButton>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>

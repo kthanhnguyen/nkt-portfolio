@@ -35,7 +35,7 @@ export default function About() {
                   I am now looking for a senior-level role where I can
                   contribute to scalable architecture and team growth.
                 </p>
-                <div className="about__btn">
+                {/* <div className="about__btn">
                   <AwesomeButton
                     type="primary"
                     href="/cv/Frontend_NguyenKimThanh.pdf"
@@ -59,7 +59,7 @@ export default function About() {
                     </svg>{' '}
                     View My CV
                   </AwesomeButton>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="flex flex-50">

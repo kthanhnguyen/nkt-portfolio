@@ -76,7 +76,7 @@ export const data = [
       'FORMIK',
       'MATERIAL UI',
     ],
-    link: '',
+    link: '#',
     startDate: '2025-03-01',
     endDate: '2026-04-01',
   },

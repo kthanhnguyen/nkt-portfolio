@@ -36,7 +36,7 @@ export default function ItemProject({ itemFound }) {
     <div className="detail">
       <div className="detail__name">{itemFound.name}</div>
       <div className="share">
-        {itemFound.link !== '#' || itemFound.link !== '' && (
+        {itemFound.link !== '#' && (
           <AwesomeButton href={itemFound.link} containerProps={{ target: '_blank', rel: 'noopener noreferrer' }} className="btn-visit">
             <svg
               className="i-svg"

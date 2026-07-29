@@ -6,31 +6,44 @@ export default function Navbar() {
   const [active, setActive] = useState(false)
   const navRef = useRef(null)
 
-  function toggle() {
-    document.body.classList.toggle('dis-scroll')
-    const nextActive = !active
-    setActive(nextActive)
-
+  function openMenu() {
     const vw = window.innerWidth
     let delayTime = 0
     const elm = document.querySelectorAll('nav > a')
 
-    if (nextActive) {
-      gsap.to(navRef.current, { duration: 0.5, x: -vw, ease: 'expo.inOut' })
-      elm.forEach((item) => {
-        gsap.to(item, { duration: 1.2, x: -vw, scaleX: 1, delay: delayTime, ease: 'expo.inOut' })
-        delayTime += 0.04
-        item.addEventListener('click', () => {
-          document.body.className = ''
-        })
-      })
+    gsap.to(navRef.current, { duration: 0.5, x: -vw, ease: 'expo.inOut' })
+    elm.forEach((item) => {
+      gsap.to(item, { duration: 1.2, x: -vw, scaleX: 1, delay: delayTime, ease: 'expo.inOut' })
+      delayTime += 0.04
+    })
+  }
+
+  function closeMenu() {
+    let delayTime = 0
+    const elm = document.querySelectorAll('nav > a')
+
+    gsap.to(navRef.current, { duration: 0.8, x: 0, ease: 'expo.inOut' })
+    elm.forEach((item) => {
+      gsap.to(item, { duration: 1, x: 0, delay: delayTime, ease: 'expo.inOut' })
+      delayTime += 0.02
+    })
+
+    document.body.classList.remove('dis-scroll')
+    setActive(false)
+  }
+
+  function toggle() {
+    if (active) {
+      closeMenu()
     } else {
-      gsap.to(navRef.current, { duration: 0.8, x: 0, ease: 'expo.inOut' })
-      elm.forEach((item) => {
-        gsap.to(item, { duration: 1, x: 0, delay: delayTime, ease: 'expo.inOut' })
-        delayTime += 0.02
-      })
+      document.body.classList.add('dis-scroll')
+      setActive(true)
+      openMenu()
     }
+  }
+
+  function handleLinkClick() {
+    if (active) closeMenu()
   }
 
   return (
@@ -42,18 +55,21 @@ export default function Navbar() {
         <NavLink
           to="/"
           end
+          onClick={handleLinkClick}
           className={({ isActive }) => `page-link home-link${isActive ? ' active' : ''}`}
         >
           <i className="icon-hom"></i>
         </NavLink>
         <NavLink
           to="/about"
+          onClick={handleLinkClick}
           className={({ isActive }) => `page-link about-link${isActive ? ' active' : ''}`}
         >
           <i className="icon-prof"></i>
         </NavLink>
         <NavLink
           to="/skills"
+          onClick={handleLinkClick}
           className={({ isActive }) => `page-link skills-link${isActive ? ' active' : ''}`}
         >
           <i className="icon-gear"></i>
@@ -61,12 +77,14 @@ export default function Navbar() {
         <NavLink
           to="/portfolio"
           end
+          onClick={handleLinkClick}
           className={({ isActive }) => `page-link portfolio-link${isActive ? ' active' : ''}`}
         >
           <i className="icon-eye"></i>
         </NavLink>
         <NavLink
           to="/contact"
+          onClick={handleLinkClick}
           className={({ isActive }) => `page-link contact-link${isActive ? ' active' : ''}`}
         >
           <i className="icon-mail"></i>
